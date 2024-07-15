@@ -6,11 +6,12 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 schema_view = get_schema_view(
     openapi.Info(
-        title="Flight Reservation API",
+        title="Flight Reservation API",  # Your project name
         default_version="v1",
+        # Info about your project
         description="Flight Reservation API project provides flight and reservation info",
         terms_of_service="#",
-        contact=openapi.Contact(email="silakmehmet@gmail"),
+        contact=openapi.Contact(email="silakmehmet@gmail"),  # Your email
         license=openapi.License(name="BSD License"),
     ),
     public=True,
